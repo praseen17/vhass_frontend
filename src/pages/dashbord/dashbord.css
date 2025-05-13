@@ -1,0 +1,31 @@
+.student-dashboard {
+  padding: 80px 0;
+  min-height: 60vh;
+}
+
+.dashboard-section {
+  margin-bottom: 60px;
+}
+
+.dashboard-section h2 {
+  font-size: 32px;
+  color: #8a4baf;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.dashboard-content p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}

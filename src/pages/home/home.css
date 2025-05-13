@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/bimbo');
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #CBCBCB;
+    color: #2E373A;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    width: min(1400px, 100vw);
+    margin: auto;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1B1B1B;
+    color: #eef8ce;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-image: 
+        url(/bg.png),
+        repeating-linear-gradient(
+            to right, transparent 0 500px, #73814B33 500px 501px
+        );
+    background-size: 100%;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-fit {
+    width: min(1200px, 90vw);
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+    padding-block: 10em;
+}
+
+header {
+    padding-block: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    background-color: #1B1B1B11;
+    background-image: repeating-linear-gradient(
+        to right, transparent 0 500px, #eee1 500px 501px
+    );
+}
+
+header .content-fit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: unset!important;
+    padding-block: unset!important;
+}
+
+header .content-fit nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+#banner .title {
+    color: #445022;
+    font-size: 11em;
+    font-family: "devil breeze";
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+#banner {
+    position: relative;
+    z-index: 2;
+}
+
+.section .decorate {
+    position: absolute;
+}
+
+#intro .content-fit {
+    display: flex;
+    gap: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .number {
+    font-family: "devil breeze";
+    font-size: 15em;
+    font-weight: bold;
+    opacity: 0.2;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+}
+
+.section .content-fit .title {
+    font-family: "devil breeze";
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#contact .content-fit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contact table {
+    width: min(800px, 90vw);
+    padding-top: 2em;
+    font-size: 2em;
+    margin: auto;
+}
+
+#contact table td {
+    padding-block: 0.5em;
+    border-bottom: 1px dashed #445022;
+}
+
+#contact table td:nth-child(1) {
+    text-align: left;
+    font-weight: 500;
+}
+
+#contact table td:nth-child(2) {
+    text-align: right;
+    font-weight: 200;
+}
+
+#contact .sign {
+    font-family: 'Bimbo', sans-serif;
+    font-size: 10em;
+}
+
+/* Add this to your existing CSS */
+.section p {
+    font-size: 1.5em; /* Increase paragraph font size */
+    line-height: 1.6; /* Improve readability with more line spacing */
+    margin-top: 1em; /* Add space between title and paragraph */
+    max-width: 800px; /* Limit line length for better readability */
+}
+
+/* Adjust the intro and description sections specifically */
+#intro .des, 
+#description .des {
+    position: relative;
+    z-index: 1;
+}
+
+#intro .content-fit {
+    gap: 10%; /* Reduce the gap between number and content */
+}
+
+/* Make the numbers slightly less prominent */
+.section .number {
+    opacity: 0.15; /* Reduce opacity further */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1023px) {
+    .section p {
+        font-size: 1.2em;
+    }
+    
+    #intro .content-fit {
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section p {
+        font-size: 1em;
+    }
+    
+    .section .number {
+        top: -1rem;
+        left: -1rem;
+    }
+}
+
+.section-text {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin: 1em 0;
+    max-width: 800px;
+}
+
+/* Add this to your existing home.css */
+
+
+@media screen and (max-width: 767px) {
+    #container3D {
+        position: absolute;
+    }
+    
+    /* Optional: Make the 3D container slightly smaller on mobile */
+    #container3D canvas {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 70vh;
+    }
+}
+@media screen and (max-width: 1023px) {
+    #banner .title {
+        font-size: 5em;
+    }
+    #intro .content-fit {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #banner .title {
+        font-size: 3em;
+    }
+    #intro .content-fit {
+        flex-direction: column;
+    }
+    .section .number {
+        font-size: 5em;
+    }
+    .section .content-fit .title {
+        font-size: 2em;
+    }
+    #description .content-fit {
+        padding-right: 0;
+    }
+    #contact table {
+        font-size: 1em;
+    }
+    #contact .sign {
+        font-size: 2em;
+    }
+    #container3D {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* CONTACT SECTION - FULLSCREEN FIT */
+    #contact {
+        width: 100vw; /* Forces full viewport width */
+        padding: 0; /* Removes extra padding */
+        margin: 0; /* Resets margins */
+        overflow: hidden; /* Prevents overflow */
+    }
+
+    #contact .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 0.5rem; /* Minimal gap */
+        width: 100%; /* Takes full width */
+        padding: 1rem; /* Inner spacing */
+        box-sizing: border-box; /* Ensures padding doesn't expand width */
+    }
+
+    #contact .autoBLur {
+        font-size: 1.3rem; /* Optimized readability */
+        padding: 0.8rem 0.5rem; /* Balanced spacing */
+        width: 100%; /* Fills grid cell */
+        text-align: center;
+        backdrop-filter: blur(0.1px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        white-space: nowrap; /* Prevents text wrapping */
+    }
+
+    
+
+    /* SINGLE COLUMN FOR TINY SCREENS (e.g., iPhone 5/SE) */
+    @media screen and (max-width: 320px) {
+        #contact .grid-3 {
+            grid-template-columns: 1fr; /* Stacks items vertically */
+        }
+    }
+}
+
+/* Why Us Section Layout */
+.why-us-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .features-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .why-us-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .why-us-text .section-text {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #dd3c0b;
+    max-width: 100%;
+  }
+  
+  /* Feature Items Styling */
+  .feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    color: #4817c5;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .feature-item p {
+    margin-bottom: 1rem;
+    color: rgba(17, 19, 12, 0.8);
+    font-size: 1.1em;
+  }
+  
+  .feature-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feature-item li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    border-left: 3px solid #73814B;
+  }
+  
+  .feature-item strong {
+    color: #73814B;
+    font-weight: 600;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1023px) {
+    .why-us-container {
+      flex-direction: column;
+    }
+    
+    .why-us-text {
+      order: -1;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .feature-item {
+      padding: 1rem;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.3em;
+    }
+    
+    .feature-item p {
+      font-size: 1em;
+    }
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+  }
+  
+  .feature-card p {
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    /* Remove all blur and background effects */
+    #contact .autoBLur {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: transparent !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0.8rem !important;
+    }
+
+    /* Ensure text is visible with proper contrast */
+    #contact .autoBLur,
+    #contact .autoBLur a {
+        color: #eef8ce !important; /* Use your light text color */
+        text-shadow: none !important;
+        opacity: 1 !important;
+        font-weight: normal !important;
+    }
+
+    /* Fix grid layout for mobile */
+    #contact .grid-3 {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        width: 100% !important;
+        padding: 1rem !important;
+    }
+
+    /* Remove any transforms or animations */
+    #contact .autoBLur {
+        transform: none !important;
+        animation: none !important;
+    }
+
+    /* Make sure links are properly styled */
+    #contact .autoBLur a {
+        text-decoration: none !important;
+        display: block !important;
+    }
+
+    /* Ensure section has proper contrast */
+}
+
+/* Mobile-specific feature card styles */
+@media screen and (max-width: 767px) {
+    .features-grid {
+      grid-template-columns: 1fr !important; /* Single column on mobile */
+      gap: 1rem !important;
+      padding: 1rem !important;
+    }
+  
+    .feature-card {
+      padding: 1.2rem !important;
+      margin: 0.5rem 0 !important;
+      border-radius: 8px !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    }
+  
+    .feature-card h3 {
+      font-size: 1.1rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+  
+    .feature-card p {
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  /* Extra small devices (phones < 400px) */
+  @media screen and (max-width: 400px) {
+    .feature-card {
+      padding: 1rem !important;
+    }
+    
+    .feature-card h3 {
+      font-size: 1rem !important;
+    }
+  }
+
+/* Add this to your existing CSS */
+#banner {
+  position: relative;
+  padding-bottom: 120px; /* Creates space at bottom for the leaf */
+  overflow: hidden; /* Keeps the leaf contained within banner */
+}
+
+#banner .title {
+  margin-bottom: 60px; /* Space between title and leaf */
+  position: relative;
+  z-index: 2; /* Ensures title stays above leaf */
+}
+
+#banner .decorate {
+  position: absolute;
+  width: 30vw;
+  max-width: 300px; /* Limits maximum size */
+  bottom: 20px; /* Positions from bottom */
+  left: 5%; /* Positions from left */
+  z-index: 1; /* Stays behind title */
+  transform: rotate(-15deg); /* Optional: adds stylistic angle */
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 767px) {
+  #banner {
+    padding-bottom: 80px; /* Less space on mobile */
+  }
+  
+  #banner .title {
+    margin-bottom: 40px; /* Reduced spacing */
+  }
+  
+  #banner .decorate {
+    width: 40vw; /* Slightly larger on small screens */
+    bottom: 10px;
+  }
+}
